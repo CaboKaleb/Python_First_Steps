@@ -7,7 +7,7 @@ listrange = range(0,10,2)
 #We add an element at the end of the list
 list.append("The end")
 
-list += ["Another end"]
+list += ["Another end \n \n \n*******************************\n \n \n"]
 
 print(list)
 
@@ -29,4 +29,16 @@ else:
 #We format the print so the items in the list appear separated by a comma on a foreach loop
 for item in list:
     print(item, end= ", ")
+
+
+#Challenge!!! Request an input text from the user and display it word by word separated by a line
+
+UserText=input("Please enter the text you want (HIT ENTER TO FINISH...): ")
+
+UserTextToList = UserText.split()
+
+UserTextToList.sort()
+
+for word in UserTextToList:
+    print(word + "\n\n") 
 

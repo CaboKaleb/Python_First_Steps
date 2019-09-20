@@ -8,10 +8,9 @@ print(Set_Example)
 
 def clearlist(initial):
     initial=set(initial)
-    list(initial).sort(reverse=True)
+    initial=list(initial)
+    initial.sort()
     return initial
 
 print(clearlist(["a", "a", "a", "a", "b", "b", "c", "c", "c", "c", "d", "d", "d", "e", "e"]))
-
-
 
